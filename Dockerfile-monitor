@@ -14,7 +14,7 @@ RUN apt install -y awscli inotify-tools unzip curl ca-certificates openjdk-11-jd
 COPY --from=builder /app/main /
 RUN chmod 755 /main
 
-RUN mkdir -p /heapdumps
-RUN chmod 777 /heapdumps
+RUN mkdir -p /var/tmp/heapdumps
+RUN chmod 777 /var/tmp/heapdumps
 CMD ["/main", "-analyse=true", "/var/tmp/heapdumps"]
 
