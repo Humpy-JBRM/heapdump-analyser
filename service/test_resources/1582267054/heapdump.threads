@@ -1,0 +1,259 @@
+Thread 0x7e130fa80
+
+  locals:
+
+Thread 0x7e130fa10
+  at java.util.Date.toString()Ljava/lang/String; (Date.java:1041)
+  at com.jumbly.monitoring.Main.main([Ljava/lang/String;)V (Main.java:16)
+
+  locals:
+    objectId=0x7e88b4ed0, line=0
+    objectId=0x7e88b4f30, line=0
+    objectId=0x7e88b4f30, line=0
+    objectId=0x7e132da58, line=1
+    objectId=0x7e132da58, line=1
+
+Thread 0x7e133d0c8
+  at jdk.internal.misc.Unsafe.park(ZJ)V (Native Method)
+  at java.util.concurrent.locks.LockSupport.parkNanos(Ljava/lang/Object;J)V (LockSupport.java:269)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(JLjava/util/concurrent/TimeUnit;)Z (AbstractQueuedSynchronizer.java:1847)
+  at java.lang.ref.ReferenceQueue.await(J)V (ReferenceQueue.java:71)
+  at java.lang.ref.ReferenceQueue.remove0(J)Ljava/lang/ref/Reference; (ReferenceQueue.java:143)
+  at java.lang.ref.ReferenceQueue.remove(J)Ljava/lang/ref/Reference; (ReferenceQueue.java:218)
+  at jdk.internal.ref.CleanerImpl.run()V (CleanerImpl.java:140)
+  at java.lang.Thread.runWith(Ljava/lang/Object;Ljava/lang/Runnable;)V (Thread.java:1636)
+  at java.lang.Thread.run()V (Thread.java:1623)
+  at jdk.internal.misc.InnocuousThread.run()V (InnocuousThread.java:186)
+
+  locals:
+    objectId=0x7e133d148, line=1
+    objectId=0x7e133d0c8, line=1
+    objectId=0x7e133d148, line=2
+    objectId=0x7e133d160, line=2
+    objectId=0x7e577c628, line=2
+    objectId=0x7e133d1b0, line=3
+    objectId=0x7e133d1b0, line=4
+    objectId=0x7e133d1b0, line=5
+    objectId=0x7e133d1d0, line=6
+    objectId=0x7e133d0c8, line=6
+    objectId=0x7e133d0c8, line=6
+    objectId=0x7e133d0c8, line=7
+    objectId=0x7ffe00fc8, line=7
+    objectId=0x7e133d1d0, line=7
+    objectId=0x7e133d0c8, line=8
+    objectId=0x7e133d1d0, line=8
+    objectId=0x7ffe00fc8, line=8
+    objectId=0x7e133d0c8, line=9
+
+Thread 0x7e131e378
+  at java.lang.Object.wait0(J)V (Native Method)
+  at java.lang.Object.wait(J)V (Object.java:366)
+  at java.lang.Object.wait()V (Object.java:339)
+  at java.lang.ref.NativeReferenceQueue.await()V (NativeReferenceQueue.java:48)
+  at java.lang.ref.ReferenceQueue.remove0()Ljava/lang/ref/Reference; (ReferenceQueue.java:158)
+  at java.lang.ref.NativeReferenceQueue.remove()Ljava/lang/ref/Reference; (NativeReferenceQueue.java:89)
+  at java.lang.ref.Finalizer$FinalizerThread.run()V (Finalizer.java:173)
+
+  locals:
+    objectId=0x7e131e3e8, line=1
+    objectId=0x7e131e3e8, line=2
+    objectId=0x7e131e3f8, line=3
+    objectId=0x7e131e3f8, line=4
+    objectId=0x7e131e3f8, line=5
+    objectId=0x7e131e3e8, line=5
+    objectId=0x7e131e378, line=6
+    objectId=0x7e131e420, line=6
+
+Thread 0x7e130fcb0
+
+  locals:
+
+Thread 0x7e130ecd0
+  at java.lang.ref.Reference.waitForReferencePendingList()V (Native Method)
+  at java.lang.ref.Reference.processPendingReferences()V (Reference.java:246)
+  at java.lang.ref.Reference$ReferenceHandler.run()V (Reference.java:208)
+
+  locals:
+    objectId=0x7e130ecd0, line=2
+
+Thread 0x7e130ef08
+  at com.sun.management.internal.HotSpotDiagnostic.dumpHeap0(Ljava/lang/String;Z)V (Native Method)
+  at com.sun.management.internal.HotSpotDiagnostic.dumpHeap(Ljava/lang/String;Z)V (HotSpotDiagnostic.java:70)
+  at java.lang.invoke.LambdaForm$DMH+0x000000080100dc00.invokeInterface(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V (Unknown Source)
+  at java.lang.invoke.LambdaForm$MH+0x0000000801080000.invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; (Unknown Source)
+  at java.lang.invoke.LambdaForm$MH+0x0000000801080400.invokeExact_MT(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; (Unknown Source)
+  at jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (DirectMethodHandleAccessor.java:156)
+  at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (DirectMethodHandleAccessor.java:104)
+  at java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (Method.java:578)
+  at sun.reflect.misc.Trampoline.invoke(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (MethodUtil.java:64)
+  at java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; (Unknown Source)
+  at java.lang.invoke.LambdaForm$MH+0x000000080100d400.invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; (Unknown Source)
+  at java.lang.invoke.LambdaForm$MH+0x000000080100d800.invokeExact_MT(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; (Unknown Source)
+  at jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (DirectMethodHandleAccessor.java:157)
+  at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (DirectMethodHandleAccessor.java:104)
+  at java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (Method.java:578)
+  at sun.reflect.misc.MethodUtil.invoke(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (MethodUtil.java:97)
+  at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (ConvertingMethod.java:193)
+  at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Lcom/sun/jmx/mbeanserver/MXBeanLookup;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; (ConvertingMethod.java:175)
+  at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Lcom/sun/jmx/mbeanserver/ConvertingMethod;Ljava/lang/Object;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; (MXBeanIntrospector.java:115)
+  at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; (MXBeanIntrospector.java:52)
+  at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; (MBeanIntrospector.java:236)
+  at com.sun.jmx.mbeanserver.PerInterface.invoke(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object; (PerInterface.java:138)
+  at com.sun.jmx.mbeanserver.MBeanSupport.invoke(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object; (MBeanSupport.java:252)
+  at javax.management.StandardMBean.invoke(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object; (StandardMBean.java:405)
+  at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Ljavax/management/ObjectName;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object; (DefaultMBeanServerInterceptor.java:803)
+  at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Ljavax/management/ObjectName;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object; (JmxMBeanServer.java:802)
+  at com.sun.jmx.mbeanserver.MXBeanProxy$InvokeHandler.invoke(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;[Ljava/lang/Object;)Ljava/lang/Object; (MXBeanProxy.java:150)
+  at com.sun.jmx.mbeanserver.MXBeanProxy.invoke(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object; (MXBeanProxy.java:167)
+  at javax.management.MBeanServerInvocationHandler.invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object; (MBeanServerInvocationHandler.java:258)
+  at jdk.proxy1.$Proxy2.dumpHeap(Ljava/lang/String;Z)V (Unknown Source)
+  at com.jumbly.monitoring.HeapdumpDaemon.dumpHeap(Ljava/lang/String;Z)V (HeapdumpDaemon.java:96)
+  at com.jumbly.monitoring.HeapdumpDaemon.run()V (HeapdumpDaemon.java:133)
+
+  locals:
+    objectId=0x7e42c7050, line=0
+    objectId=0x7f0d31558, line=1
+    objectId=0x7e42bf058, line=1
+    objectId=0x7e573b130, line=1
+    objectId=0x7e573b5a8, line=1
+    objectId=0x7e5751fd8, line=2
+    objectId=0x7f0d31558, line=2
+    objectId=0x7e42bf058, line=2
+    objectId=0x7e5751628, line=2
+    objectId=0x7f0d31558, line=2
+    objectId=0x7e573ad60, line=3
+    objectId=0x7f0d31558, line=3
+    objectId=0x7e42bf058, line=3
+    objectId=0x7e130ffd8, line=3
+    objectId=0x7e573a8f0, line=3
+    objectId=0x7e42bf058, line=3
+    objectId=0x7e573a5c0, line=3
+    objectId=0x7f0d31558, line=3
+    objectId=0x7e5754b50, line=3
+    objectId=0x7e5751fd8, line=3
+    objectId=0x7e573ad60, line=4
+    objectId=0x7f0d31558, line=4
+    objectId=0x7e42bf058, line=4
+    objectId=0x7e130ffd8, line=4
+    objectId=0x7e131d138, line=4
+    objectId=0x7e573ae70, line=5
+    objectId=0x7f0d31558, line=5
+    objectId=0x7e574e048, line=5
+    objectId=0x7e573ae70, line=6
+    objectId=0x7f0d31558, line=6
+    objectId=0x7e574e048, line=6
+    objectId=0x7f0d31d70, line=7
+    objectId=0x7f0d31558, line=7
+    objectId=0x7e574e048, line=7
+    objectId=0x7e574f938, line=7
+    objectId=0x7e573ae70, line=7
+    objectId=0x7f0d31d70, line=8
+    objectId=0x7f0d31558, line=8
+    objectId=0x7e574e048, line=8
+    objectId=0x7e5750198, line=9
+    objectId=0x7f0d31d70, line=9
+    objectId=0x7f0d31558, line=9
+    objectId=0x7e574e048, line=9
+    objectId=0x7e5750110, line=9
+    objectId=0x7e5750b38, line=10
+    objectId=0x7f0d31d70, line=10
+    objectId=0x7f0d31558, line=10
+    objectId=0x7e574e048, line=10
+    objectId=0x7e57508e0, line=10
+    objectId=0x7e574e048, line=10
+    objectId=0x7e5750628, line=10
+    objectId=0x7f0d31d70, line=10
+    objectId=0x7e5750198, line=10
+    objectId=0x7e5750b38, line=11
+    objectId=0x7f0d31d70, line=11
+    objectId=0x7f0d31558, line=11
+    objectId=0x7e574e048, line=11
+    objectId=0x7e131d368, line=11
+    objectId=0x7e5750c40, line=12
+    objectId=0x7e5750068, line=12
+    objectId=0x7e5750c40, line=13
+    objectId=0x7e5750068, line=13
+    objectId=0x7e5750010, line=14
+    objectId=0x7e5750068, line=14
+    objectId=0x7e5750c40, line=14
+    objectId=0x7f0d31d70, line=15
+    objectId=0x7f0d31558, line=15
+    objectId=0x7e574e048, line=15
+    objectId=0x7f0d31d50, line=16
+    objectId=0x7f0d31558, line=16
+    objectId=0x7e574e048, line=16
+    objectId=0x7e574e048, line=16
+    objectId=0x7f0d31d50, line=17
+    objectId=0x7eac1d748, line=17
+    objectId=0x7f0d31558, line=17
+    objectId=0x7e574e048, line=17
+    objectId=0x7eac1d748, line=17
+    objectId=0x7e42be9e0, line=18
+    objectId=0x7f0d31d50, line=18
+    objectId=0x7f0d31558, line=18
+    objectId=0x7e574e048, line=18
+    objectId=0x7eac1d748, line=18
+    objectId=0x7e42be9e0, line=19
+    objectId=0x7f0d31d50, line=19
+    objectId=0x7f0d31558, line=19
+    objectId=0x7e574e048, line=19
+    objectId=0x7eac1d748, line=19
+    objectId=0x7e42be9e0, line=20
+    objectId=0x7f0d31d50, line=20
+    objectId=0x7f0d31558, line=20
+    objectId=0x7e574e048, line=20
+    objectId=0x7eac1d748, line=20
+    objectId=0x7f0d31568, line=21
+    objectId=0x7f0d31558, line=21
+    objectId=0x7f0d02ba8, line=21
+    objectId=0x7e574e048, line=21
+    objectId=0x7e574f000, line=21
+    objectId=0x7eac1d748, line=21
+    objectId=0x7f0d31d20, line=21
+    objectId=0x7f0d31d38, line=21
+    objectId=0x7e574f158, line=21
+    objectId=0x7f0d30598, line=22
+    objectId=0x7f0d02ba8, line=22
+    objectId=0x7e574e048, line=22
+    objectId=0x7e574f000, line=22
+    objectId=0x7f0d30580, line=23
+    objectId=0x7f0d02ba8, line=23
+    objectId=0x7e574e048, line=23
+    objectId=0x7e574f000, line=23
+    objectId=0x7eac1cc40, line=24
+    objectId=0x7e574d1a8, line=24
+    objectId=0x7f0d02ba8, line=24
+    objectId=0x7e574e048, line=24
+    objectId=0x7e574f000, line=24
+    objectId=0x7f0d30580, line=24
+    objectId=0x7eac1cac8, line=25
+    objectId=0x7e574d1a8, line=25
+    objectId=0x7f0d02ba8, line=25
+    objectId=0x7e574e048, line=25
+    objectId=0x7e574f000, line=25
+    objectId=0x7e574f018, line=26
+    objectId=0x7eac1cac8, line=26
+    objectId=0x7e574d1a8, line=26
+    objectId=0x7e574e048, line=26
+    objectId=0x7e574e118, line=27
+    objectId=0x7eac1cac8, line=27
+    objectId=0x7e574d1a8, line=27
+    objectId=0x7e574dd08, line=27
+    objectId=0x7e574e048, line=27
+    objectId=0x7e574f018, line=27
+    objectId=0x7e574e3a0, line=27
+    objectId=0x7eac1d748, line=27
+    objectId=0x7e574e048, line=27
+    objectId=0x7e574d430, line=28
+    objectId=0x7e574e038, line=28
+    objectId=0x7e574dd08, line=28
+    objectId=0x7e574e048, line=28
+    objectId=0x7f0d00b18, line=28
+    objectId=0x7e574e118, line=28
+    objectId=0x7e574e038, line=29
+    objectId=0x7e42bf058, line=29
+    objectId=0x7e42bf058, line=30
+    objectId=0x7eac1cac8, line=30
+    objectId=0x7e574e038, line=30
+    objectId=0x7e130ef08, line=31
+

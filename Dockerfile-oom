@@ -1,0 +1,12 @@
+FROM  alpine
+
+RUN apk add openjdk11
+COPY src/main/java/oom.jar /
+COPY lib/ /
+RUN ls -la /
+RUN find . 
+RUN echo /*
+
+RUN mkdir -p /heapdumps/s3
+RUN chmod 777 /heapdumps
+CMD ["java", "-cp", "/oom.jar:/java-dogstatsd-client-4.2.0.jar", "-DenableAutoHeapdump=true", "-DheapdumpOnMemoryPercent=10", "-DheapdumpDirectory=/heapdumps", "-DheapdumpSleepTime=1000", "-Xmx500m", "-XX:+HeapDumpOnOutOfMemoryError", "-XX:HeapDumpPath=/heapdumps", "com.jumbly.monitoring.Main"]

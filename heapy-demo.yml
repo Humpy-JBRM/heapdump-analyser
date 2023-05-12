@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: heapy-demo
+spec:
+  volumes:
+    - name: heapdumps
+      emptyDir: {}
+
+  containers:
+    - name: heapy
+      image: docker.io/lowrielabs/heapy:latest
+      volumeMounts:
+        - name: heapdumps
+          mountPath: /heapdumps
+
+    - name: heapdump-hoover
+      image: docker.io/lowrielabs/monitor:latest
+      volumeMounts:
+        - name: heapdumps
+          mountPath: /heapdumps
+

@@ -1,0 +1,6 @@
+heapdump:
+  listen: 0.0.0.0:8000
+  # This is the path of MAT as installed on MacOS by default
+  parse_command: "/Applications/mat.app/Contents/Eclipse/ParseHeapDump.sh"
+  root: /var/tmp/heapdumps
+  workers: 5

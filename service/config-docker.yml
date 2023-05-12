@@ -1,0 +1,5 @@
+heapdump:
+  listen: 0.0.0.0:8000
+  parse_command: "/mat/ParseHeapDump.sh"
+  root: /var/tmp/heapdumps
+  workers: 5
