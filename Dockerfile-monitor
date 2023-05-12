@@ -1,4 +1,4 @@
-FROM hoover:1.20-alpine as builder
+FROM golang:1.20-alpine as builder
 
 WORKDIR /app
 
@@ -14,21 +14,7 @@ RUN apt install -y awscli inotify-tools unzip curl ca-certificates openjdk-11-jd
 COPY --from=builder /app/main /
 RUN chmod 755 /main
 
-## Make sure aws-cli installed OK
-RUN aws --version
-
-# Eclipse MAT
-RUN curl -L -o /var/tmp/mat.zip 'https://www.eclipse.org/downloads/download.php?file=/mat/1.14.0/rcp/MemoryAnalyzer-1.14.0.20230315-linux.gtk.x86_64.zip&r=1'
-RUN unzip /var/tmp/mat.zip
-RUN rm -f /var/tmp/mat.zip
-
-ARG AWS_ACCESS_KEY_ID
-ARG AWS_SECRET_ACCESS_KEY
-ARG AWS_S3_BUCKET
-ENV AWS_ACCESS_KEY_ID ${AWS_ACCESS_KEY_ID}
-ENV AWS_SECRET_ACCESS_KEY ${AWS_SECRET_ACCESS_KEY}
-ENV AWS_S3_BUCKET ${AWS_S3_BUCKET}
-
 RUN mkdir -p /heapdumps
 RUN chmod 777 /heapdumps
-CMD ["/main", "-analyse=true", "/heapdumps"]
+CMD ["/main", "-analyse=true", "/var/tmp/heapdumps"]
+
