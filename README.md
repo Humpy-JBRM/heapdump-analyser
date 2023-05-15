@@ -17,7 +17,7 @@ To do this, all you need to do is:
   
   - add the sidecar to your pod `yaml` (See [heapy-demo.yml](heapy-demo.yml))
   
-  - Make sure that your VM is running with `-XX:-XX:+HeapDumpOnOutOfMemoryError` and `-XX:HeapDumpPath=/heapdumps` as VM parameters
+  - Make sure that your VM is running with `-XX:+HeapDumpOnOutOfMemoryError` and `-XX:HeapDumpPath=/heapdumps` as VM parameters
   
   - Make sure that your VM is running with the VM parameters:
   
