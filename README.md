@@ -8,39 +8,6 @@ Making JVMs more transparent:
 
   - export detailed GC information to Datadog (see *GC Metrics* below)
 
-## Quickstart: Run The Demo (MacOS)
-The demo will create two docker containers:
-
-  - a container which runs a JVM containing a memory leak which will eventually OOM
-  
-  - a sidecar container which will collect the resulting heapdumps, auto-generate the leak reports, and copy all that to an s3 bucket
-  
-See [heapy-demo.yml](heapy-demo.yml)
-
-If the `AWS_WEB_IDENTITY_TOKEN_FILE` environment variable is not set, then the following environment variables must be set:
-
-- `AWS_ACCESS_KEY_ID`
-  Your AWS access key id
-  
-- `AWS_SECRET_ACCESS_KEY`
-  Your aws secret
-  
-- `AWS_S3_BUCKET`
-  The `s3` bucket to copy the `.hprof` files to (without the `s3://` prefix)
-  
-
-First, make sure you have set up docker and kubernetes (`minikube` is fine, as is `rancher`).  You will also need OpenJdk11.
-
-Then:
-
-- `make clean all push deploy`
-
-- `kubectl logs -f pods/heapy-demo --all-containers=true`
-
-The demo simply kicks off a JVM which has a memory leak, and a monitor which copies these heap dumps to S3 and automatically analyses them.  You can see the files for yourself with:
-
-`aws s3 ls ${AWS_S3_BUCKET} --recursive`
-
 ## QuickStart - Hoover Up OOM Heapdumps
 To do this, all you need to do is:
 
